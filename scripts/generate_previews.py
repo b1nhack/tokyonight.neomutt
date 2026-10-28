@@ -173,11 +173,17 @@ def render(variant: str) -> str:
             weight = ' font-weight="bold"' if "bold" in attrs else ""
             deco = ' text-decoration="underline"' if "underline" in attrs else ""
             italic = ' font-style="italic"' if "italic" in attrs else ""
-            parts.append(
-                f'<text x="{x:.1f}" y="{base_y:.1f}" fill="{fg}"{weight}{deco}{italic} '
-                f'xml:space="preserve">{esc(text)}</text>'
-            )
-            x += len(text) * CHAR_W
+            extra = f"{weight}{deco}{italic}"
+            # One <text> per glyph at an explicit x: rendering is independent
+            # of the viewer's font metrics, so columns line up everywhere.
+            for ch in text:
+                if ch != " ":
+                    parts.append(
+                        f'<text x="{x:.1f}" y="{base_y:.1f}" fill="{fg}"{extra} '
+                        f'xml:space="preserve">{esc(ch)}</text>'
+                    )
+                x += CHAR_W
+        return x
         return x
 
     base_top = TITLE_H + PAD_Y + FONT_SIZE
