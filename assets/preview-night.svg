@@ -6,16 +6,15 @@
 <circle cx="49.0" cy="20.0" r="5.5" fill="#9ece6a"/>
 <text x="320.2" y="24.7" text-anchor="middle" fill="#a9b1d6">neomutt — tokyonight-night</text>
 <text x="16.0" y="63.0" fill="#737aa2" xml:space="preserve">  Mailboxes               </text>
-<text x="16.0" y="83.0" fill="#1abc9c" xml:space="preserve">  INBOX                   </text>
-<text x="218.8" y="83.0" fill="#9ece6a" xml:space="preserve">New: 2</text>
+<text x="16.0" y="83.0" fill="#1abc9c" xml:space="preserve">  INBOX        </text>
+<text x="133.0" y="83.0" fill="#9ece6a" xml:space="preserve">New: 2</text>
 <text x="226.6" y="83.0" fill="#9ece6a" xml:space="preserve">  1 N  Oct 28  folke       tokyonight v4 is out</text>
 <rect x="16.0" y="91.6" width="202.8" height="16.2" fill="#292e42"/>
-<text x="16.0" y="103.0" fill="#c0caf5" xml:space="preserve">  &gt; tokyonight            </text>
-<text x="218.8" y="103.0" fill="#7aa2f7" xml:space="preserve">[open]</text>
+<text x="16.0" y="103.0" fill="#c0caf5" xml:space="preserve">  &gt; tokyonight [open]     </text>
 <text x="226.6" y="103.0" fill="#9ece6a" xml:space="preserve">  2 N  Oct 28  GitHub      [neomutt] PR #313 merged</text>
 <text x="16.0" y="123.0" fill="#737aa2" xml:space="preserve">  &gt; sent                  </text>
-<rect x="226.6" y="111.6" width="475.8" height="16.2" fill="#292e42"/>
-<text x="226.6" y="123.0" fill="#c0caf5" xml:space="preserve">&gt; 3    Oct 27  b1n        Re: a tokyonight theme for neomutt?</text>
+<rect x="226.6" y="111.6" width="374.4" height="16.2" fill="#292e42"/>
+<text x="226.6" y="123.0" fill="#c0caf5" xml:space="preserve">&gt; 3    Oct 27  b1n        Re: theme for neomutt?</text>
 <text x="16.0" y="143.0" fill="#f7768e" xml:space="preserve">  &gt; drafts  !             </text>
 <text x="226.6" y="143.0" fill="#f7768e" xml:space="preserve">  4 !  Oct 26  boss       deploy the theme tonight</text>
 <text x="16.0" y="163.0" fill="#737aa2" xml:space="preserve">  &gt; archive               </text>

@@ -85,17 +85,17 @@ def st(theme, key: str):
 #   ("full",  segments)                          status bar / pager
 # ---------------------------------------------------------------------------
 def build_rows():
-    def sb(text, style):
-        return (text.ljust(SIDEBAR_W)[:SIDEBAR_W], style)
+    def sb(text, style, width=SIDEBAR_W):
+        return (text.ljust(width)[:width], style)
 
     rows = []
     rows.append(("split", [sb("  Mailboxes", "sidebar_ordinary")], []))
-    rows.append(("split", [sb("  INBOX     ", "sidebar_spool_file"), ("New: 2", "sidebar_new")],
+    rows.append(("split", [sb("  INBOX", "sidebar_spool_file", 15), ("New: 2", "sidebar_new")],
                  [("  1 N  Oct 28  folke       tokyonight v4 is out", "index~N")]))
-    rows.append(("split", [sb("  > tokyonight", "sidebar_highlight"), ("[open]", "sidebar_indicator")],
+    rows.append(("split", [sb("  > tokyonight [open]", "sidebar_highlight")],
                  [("  2 N  Oct 28  GitHub      [neomutt] PR #313 merged", "index~N")]))
     rows.append(("split", [sb("  > sent", "sidebar_ordinary")],
-                 [("> 3    Oct 27  b1n        Re: a tokyonight theme for neomutt?", "indicator")]))
+                 [("> 3    Oct 27  b1n        Re: theme for neomutt?", "indicator")]))
     rows.append(("split", [sb("  > drafts  !", "sidebar_flagged")],
                  [("  4 !  Oct 26  boss       deploy the theme tonight", "index~F")]))
     rows.append(("split", [sb("  > archive", "sidebar_ordinary")],
