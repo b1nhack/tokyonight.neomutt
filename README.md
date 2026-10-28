@@ -175,7 +175,3 @@ python3 scripts/generate_previews.py  # renders assets/ from themes/truecolor/
 - Palettes: [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) — Apache License 2.0, used with attribution (see [LICENSE](LICENSE)).
 - Theme structure inspired by [catppuccin/neomutt](https://github.com/catppuccin/neomutt), extended to full object coverage.
 - This repository: MIT.
-
----
-
-[中文说明（README.zh-CN.md）](README.zh-CN.md)
